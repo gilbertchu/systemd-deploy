@@ -1,0 +1,10 @@
+[Unit]
+Description=New service
+After=network.target
+
+[Service]
+ExecStart=index.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
